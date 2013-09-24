@@ -25,7 +25,8 @@ jQuery scrolling slider plugin
 </div>
  ```
  
- .slider-wrap block is not necessary, but I use it to absolute position arrows. Arrows shouldn't be inside #slider, because it has overflow: hidden property
+ .slider-wrap block is not necessary, but I use it to absolute position arrows. 
+ Arrows shouldn't be inside #slider, because it has overflow: hidden property
  
  ### CSS
 
