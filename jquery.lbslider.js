@@ -80,7 +80,7 @@
 
             if (options.autoPlay) {
                 function aPlay() {
-                    $('.' + options.rightBtn).click();
+                    rightBtn.click();
                     delId = setTimeout(aPlay, options.autoPlayDelay * 1000);
                 }
                 var delId = setTimeout(aPlay, options.autoPlayDelay * 1000);
