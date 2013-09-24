@@ -3,7 +3,7 @@
         var options = $.extend({
             leftBtn: '.leftBtn',
             rightBtn: '.rightBtn',
-            quantity: 3,
+            visible: 3,
             autoPlay: false,  // true or false
             autoPlayDelay: 10  // delay in seconds
         }, options);
@@ -16,13 +16,13 @@
             });
             var leftBtn = $(options.leftBtn), rightBtn = $(options.rightBtn);
 
-            var sliderFirst = el.children('li').slice(0, options.quantity);
+            var sliderFirst = el.children('li').slice(0, options.visible);
             var tmp = '';
             sliderFirst.each(function(){
                 tmp = tmp + '<li>' + $(this).html() + '</li>';
             });
             sliderFirst = tmp;
-            var sliderLast = el.children('li').slice(-options.quantity);
+            var sliderLast = el.children('li').slice(-options.visible);
             tmp = '';
             sliderLast.each(function(){
                 tmp = tmp + '<li>' + $(this).html() + '</li>';
@@ -32,14 +32,14 @@
             var elRealQuant = el.children('li').length;
             el.append(sliderFirst);
             el.prepend(sliderLast);
-            var elWidth = el.width()/options.quantity;
+            var elWidth = el.width()/options.visible;
             el.children('li').css({
                 float: 'left',
                 width: elWidth
             });
             var elQuant = el.children('li').length;
             el.width(elWidth * elQuant);
-            el.css('left', '-' + elWidth * options.quantity + 'px');
+            el.css('left', '-' + elWidth * options.visible + 'px');
 
             function disableButtons() {
                 leftBtn.addClass('inactive');
@@ -70,7 +70,7 @@
                     disableButtons();
                     el.animate({left: '-=' + elWidth + 'px'}, 300,
                         function(){
-                            if ($(this).css('left') == '-' + (elWidth * (options.quantity + elRealQuant)) + 'px') {$(this).css('left', '-' + elWidth * options.quantity + 'px');}
+                            if ($(this).css('left') == '-' + (elWidth * (options.visible + elRealQuant)) + 'px') {$(this).css('left', '-' + elWidth * options.visible + 'px');}
                             enableButtons();
                         }
                     );
