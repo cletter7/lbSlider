@@ -1,8 +1,8 @@
 (function($){
     $.fn.lbSlider = function(options) {
         var options = $.extend({
-            leftBtn: 'leftBtn',
-            rightBtn: 'rightBtn',
+            leftBtn: '.leftBtn',
+            rightBtn: '.rightBtn',
             quantity: 3,
             autoPlay: false,  // true or false
             autoPlayDelay: 10  // delay in seconds
@@ -14,6 +14,7 @@
                 position: 'relative',
                 left: '0'
             });
+            var leftBtn = $(options.leftBtn), rightBtn = $(options.rightBtn);
 
             var sliderFirst = el.children('li').slice(0, options.quantity);
             var tmp = '';
@@ -40,10 +41,16 @@
             el.width(elWidth * elQuant);
             el.css('left', '-' + elWidth * options.quantity + 'px');
 
-            function disableButtons() {$('.' + options.leftBtn + ', .' + options.rightBtn).addClass('inactive');}
-            function enableButtons() {$('.' + options.leftBtn + ', .' + options.rightBtn).removeClass('inactive');}
+            function disableButtons() {
+                leftBtn.addClass('inactive');
+                rightBtn.addClass('inactive');
+            }
+            function enableButtons() {
+                leftBtn.removeClass('inactive');
+                rightBtn.removeClass('inactive');
+            }
 
-            $('.' + options.leftBtn).click(function(event){
+            leftBtn.click(function(event){
                 event.preventDefault();
                 if (!$(this).hasClass('inactive')) {
                     disableButtons();
@@ -57,7 +64,7 @@
                 return false;
             });
 
-            $('.' + options.rightBtn).click(function(event){
+            rightBtn.click(function(event){
                 event.preventDefault();
                 if (!$(this).hasClass('inactive')) {
                     disableButtons();
