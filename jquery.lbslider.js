@@ -9,6 +9,13 @@
         }, options);
         var make = function() {
             $(this).css('overflow', 'hidden');
+            
+            var thisWidth = $(this).width();
+            var mod = thisWidth % options.visible;
+            if (mod) {
+                $(this).width(thisWidth - mod); // to prevent bugs while scrolling to the end of slider
+            }
+            
             var el = $(this).children('ul');
             el.css({
                 position: 'relative',
