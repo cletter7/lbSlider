@@ -27,11 +27,11 @@ jQuery scrolling slider plugin
  
  .slider-wrap block is not necessary, but I use it to absolute position arrows. Arrows shouldn't be inside #slider, because it has overflow: hidden property
  
- ## CSS
+ ### CSS
 
 You can style arrows and content as you like.
  
- ## Javascript
+ ### Javascript
  
  ```javascript
  $('#slider').lbSlider({
