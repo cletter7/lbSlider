@@ -1,7 +1,7 @@
 lbSlider
 ========
 
-jQuery scrolling slider plugin
+jQuery scrolling slider plugin. You can put any content, not only images
 
 ## Usage
 
