@@ -9,8 +9,8 @@ jQuery infinitely scrolling slider plugin. You can put any content, not only ima
 
 ```javascript
 $('#slider').lbSlider({
- leftBtn: '#arrow-left', // left control
- rightBtn: '#arrow-right', // right control
+ leftBtn: '#arrow-left', // left control selector
+ rightBtn: '#arrow-right', // right control selector
  visible: 3, // visible elements quantity
  autoPlay: true, // autoscroll flag (default: false)
  autoPlayDelay: 5 // delay of autoscroll in seconds (default: 10)
@@ -39,6 +39,7 @@ $('#slider').lbSlider({
  
 .slider-wrap block is not necessary, but I use it to absolute position arrows. 
 Arrows shouldn't be inside #slider, because it has overflow: hidden property
+You can use any IDs and Classes in your html.
  
 ### CSS
 
