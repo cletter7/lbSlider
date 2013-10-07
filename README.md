@@ -5,6 +5,8 @@ jQuery infinitely scrolling slider plugin. You can put any content, not only ima
 
 ## Usage
 
+You can use any IDs and Classes in your html. Below is just an example.
+
 ### Javascript
 
 ```javascript
@@ -38,8 +40,7 @@ $('#slider').lbSlider({
 ```
  
 .slider-wrap block is not necessary, but I use it to absolute position arrows. 
-Arrows shouldn't be inside #slider, because it has overflow: hidden property
-You can use any IDs and Classes in your html.
+Arrows shouldn't be inside #slider, because it has overflow: hidden property.
  
 ### CSS
 
