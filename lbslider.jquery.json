@@ -8,7 +8,7 @@
 		"infinitely"
 	],
 	"version": "1.0.7",
-	"author:" {
+	"author": {
 		"name": "Andrew Urbanas",
 		"url": "https://github.com/equinox7/",
 		"email": "owner@lfox.me"
@@ -22,7 +22,7 @@
 	"bugs": "https://github.com/equinox7/lbSlider/issues",
 	"docs": "https://github.com/equinox7/lbSlider/",
 	"demo": "http://jsfiddle.net/qZNnk/",
-	"download": "https://github.com/equinox7/lbSlider/"
+	"download": "https://github.com/equinox7/lbSlider/",
 	"dependencies": {
 		"jquery": ">=1.4.2"
 	}
