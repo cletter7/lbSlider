@@ -72,12 +72,14 @@
   <script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
   <script src="./jquery.lbslider.js"></script>
   <script>
-    jQuery('.slider').lbSlider({
-      leftBtn: '.sa-left',
-      rightBtn: '.sa-right',
-      visible: 3,
-      autoPlay: true,
-      autoPlayDelay: 5
+    $(function(){
+      jQuery('.slider').lbSlider({
+        leftBtn: '.sa-left',
+        rightBtn: '.sa-right',
+        visible: 3,
+        autoPlay: true,
+        autoPlayDelay: 5
+      });
     });
   </script>
 </body>
