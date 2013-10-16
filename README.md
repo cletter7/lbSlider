@@ -21,6 +21,8 @@ $('#slider').lbSlider({
 
 ### HTML
 
+UL element is required.
+
 ```html
 <div class="slider-wrap">
  <div id="slider">
@@ -39,7 +41,6 @@ $('#slider').lbSlider({
 </div>
 ```
 
-UL element is required.
 .slider-wrap block is not necessary, but I use it to absolute position arrows. 
 Arrows shouldn't be inside #slider, because it has overflow: hidden property.
  
