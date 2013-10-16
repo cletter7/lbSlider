@@ -1,7 +1,8 @@
 lbSlider
 ========
 
-jQuery infinitely scrolling slider plugin. You can put any content, not only images
+jQuery infinitely scrolling slider plugin.
+You can use any content, not only images.
 
 ## Usage
 
