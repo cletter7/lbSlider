@@ -51,4 +51,4 @@ You can style arrows and content as you like.
 
 ## Demo
 
-Demo on [JSFiddle](http://jsfiddle.net/equinoxlb/qZNnk/477/ "open demo")
+Demo on [JSFiddle](http://jsfiddle.net/qZNnk/ "open demo")
