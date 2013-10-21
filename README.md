@@ -44,6 +44,7 @@ UL element is required.
 
 .slider-wrap block is not necessary, but I use it to absolute position arrows. 
 Arrows shouldn't be inside #slider, because it has overflow: hidden property.
+All slides should have same width for correct displaying.
  
 ### CSS
 
