@@ -16,7 +16,8 @@ $('#slider').lbSlider({
  rightBtn: '#arrow-right', // right control selector
  visible: 3, // visible elements quantity
  autoPlay: true, // autoscroll flag (default: false)
- autoPlayDelay: 5 // delay of autoscroll in seconds (default: 10)
+ autoPlayDelay: 5, // delay of autoscroll in seconds (default: 10)
+ autoPlayDirection: 'left-to-right'  //autoplay direction (left-to-right or right-to-left)
 });
 ```
 
