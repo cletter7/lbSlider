@@ -6,7 +6,7 @@
             visible: 3,
             autoPlay: false,  // true or false
             autoPlayDelay: 10,  // delay in seconds
-	    autoPlayDirection: 'left-to-right'  //autoplay direction
+			autoPlayDirection: 'left-to-right'  //autoplay direction
         }, options);
         var make = function() {
             $(this).css('overflow', 'hidden');
@@ -88,13 +88,13 @@
 
             if (options.autoPlay) {
                 function aPlay() {
-                    var direction =(options.autoPlayDirection);
-                	 if(direction === 'left-to-right')
-                	     leftBtn.click();
-                	 else if(direction === 'right-to-left')
-                	     rightBtn.click();
-                	 else
-                	     rightBtn.click();
+					var direction =(options.autoPlayDirection);
+					if(direction === 'left-to-right')
+						leftBtn.click();
+					else if(direction === 'right-to-left')
+						rightBtn.click();
+					 else
+						leftBtn.click();
                     delId = setTimeout(aPlay, options.autoPlayDelay * 1000);
                 }
                 var delId = setTimeout(aPlay, options.autoPlayDelay * 1000);
