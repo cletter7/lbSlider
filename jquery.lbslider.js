@@ -6,7 +6,7 @@
             visible: 3,
             autoPlay: false,  // true or false
             autoPlayDelay: 10,  // delay in seconds
-            autoPlayDirection: 'left-to-right'  //autoplay direction
+            autoPlayDirection: 'right-to-left'  //autoplay direction
         }, options);
         var make = function() {
             $(this).css('overflow', 'hidden');
